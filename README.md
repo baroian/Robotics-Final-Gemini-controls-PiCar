@@ -2,6 +2,11 @@
 
 This project allows controlling a PiCar-4WD using natural language commands, processed by Google's Gemini model, with an option for voice input transcribed via OpenAI's Whisper API.
 
+![image](https://github.com/user-attachments/assets/151dfcba-1507-447f-ae90-738e11b346a5)
+
+![image](https://github.com/user-attachments/assets/336d71bb-53e0-4cca-8bba-2ce203a9cd82)
+
+
 ## Project Structure
 
 - `final_control.py`: Main script to run the PiCar control loop. It captures images, sends them to Gemini for instructions, and executes movement commands. Handles text and voice task input.
