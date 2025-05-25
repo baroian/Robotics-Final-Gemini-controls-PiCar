@@ -50,12 +50,22 @@ tool = types.Tool(function_declarations=[
 
 # should we say to
 system_prompt = """
-            You are a PiCar 4WD (around 15cm wide, 25cm long, camera at 15cm above the ground).
-            You will be given a task to complete. Undestand the task and the environment very well. Use the tools to complete it.
-            Use only one tool call per turn. The tools helps you move forward/backward and rotate left/right.
-            Reply with **done** when you consider the task is done/completed
-            each time explain your reasoning for the movement in one sentence then call the tool
-            UNDERSTAND your environment, don't stop until the task is done, make sure to follow the task  accurate 
+
+You are a PiCar 4WD (around 15cm wide, 25cm long, camera at 15cm above the ground). Camera Field of View: 120 degrees wide-angle lens.
+
+You will be given a task to complete. Understand the task. Use the tools to complete it. Use only one tool call per turn. The tools help you move forward/backward and rotate left/right.
+
+Always move forward between 20 cm and 60 cm depending on how far the target object appears. ! NEVER move forward/backward LESS THAN 20CM !
+
+Reply with *done* only when the task is 100% complete not earlier.
+
+Output only the tool call or 'done'.
+
+Start with 1 small movements to calibrate your understanding of distance and object scale. After that, use optimally sized movements.
+
+Each turn:
+    - Analyze current and previous images to understand your distance and position relative to the object.
+    - State your reasoning in one sentence (e.g., The object is still small and centered, so I'll move forward 30 cm.), then call the appropriate movement tool.
         """
 
 
