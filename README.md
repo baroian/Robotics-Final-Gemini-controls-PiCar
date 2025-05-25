@@ -7,7 +7,7 @@ This project allows controlling a PiCar-4WD using natural language commands, pro
 ![image](https://github.com/user-attachments/assets/336d71bb-53e0-4cca-8bba-2ce203a9cd82)
 
 
-[![Demo Video](https://img.youtube.com/vi/jg3ih08Asls/maxresdefault.jpg)](https://youtu.be/jg3ih08Asls)
+[Watch the demo on YouTube](https://youtu.be/jg3ih08Asls)
 
 
 ## Project Structure
