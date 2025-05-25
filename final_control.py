@@ -170,5 +170,3 @@ while True:  # Outer loop for continuous task input
                 done = True
 
 picam2.stop()
-
-#openai_key = "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"
